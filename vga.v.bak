@@ -1,0 +1,9 @@
+// VGA 
+module vga(
+	input clk,
+	output vga_h_sync,
+	output vga_v_sync,
+	output reg inDisplayArea,
+	output reg [9:0] CounterX,
+	output reg [9:0] counterY	
+);
