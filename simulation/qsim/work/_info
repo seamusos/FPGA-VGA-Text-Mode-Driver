@@ -1,0 +1,172 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/Quartus Project/simulation/qsim
+vfrac_clock_divider
+Z1 !s110 1599453226
+!i10b 1
+!s100 BYTb2jRik9l1]ECz`a6m?1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@37^`e667iOU<4nZ:4FD>0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1599453224
+Z4 8ESSA_Assignment.vo
+Z5 FESSA_Assignment.vo
+!i122 34
+L0 32 147
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1599453226.000000
+Z8 !s107 ESSA_Assignment.vo|
+Z9 !s90 -work|work|ESSA_Assignment.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfrac_clock_divider_vlg_vec_tst
+R1
+!i10b 1
+!s100 9[T8[?`cbAXFZ[n>3Oo>]3
+R2
+I2SYa?S@EK9USV^Ma@n<EI1
+R3
+R0
+w1599453222
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+!i122 35
+L0 30 26
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+Z16 !s110 1599458827
+!i10b 1
+!s100 GGja:c6c`K?UiMkUL1HJU3
+R2
+IcnA9aUU^6`mQ[5oWBi3>f0
+R3
+R0
+Z17 w1599458825
+R4
+R5
+!i122 54
+L0 1982 34
+R6
+r1
+!s85 0
+31
+Z18 !s108 1599458827.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsync_generator
+Z19 !s110 1599458638
+!i10b 1
+!s100 mIMe04BFV>kH4gXLEPVbC2
+R2
+IJnc@2E[XTKo5cAA;5bc?82
+R3
+R0
+w1599458636
+R4
+R5
+!i122 52
+L0 32 1687
+R6
+r1
+!s85 0
+31
+Z20 !s108 1599458638.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsync_generator_vlg_vec_tst
+R19
+!i10b 1
+!s100 []H5H1ojXOQT^RUZJM@`J0
+R2
+Ihg^m`ZP>]f>Lafd[1MFh?0
+R3
+R0
+w1599458634
+R12
+R13
+!i122 53
+L0 30 34
+R6
+r1
+!s85 0
+31
+R20
+R14
+R15
+!i113 1
+R10
+R11
+vvga
+R16
+!i10b 1
+!s100 O:cZNJ82Z=^CRUDHHGLY31
+R2
+IM@6k[8;DA5ml;OBG3C:L72
+R3
+R0
+R17
+R4
+R5
+!i122 54
+L0 32 1949
+R6
+r1
+!s85 0
+31
+R18
+R8
+R9
+!i113 1
+R10
+R11
+vvga_vlg_vec_tst
+R16
+!i10b 1
+!s100 L^O0LB>W;9mJEXD::1mhP3
+R2
+Id8>Yc];b?i8LGNRZf?D1`3
+R3
+R0
+w1599458823
+R12
+R13
+!i122 55
+L0 30 42
+R6
+r1
+!s85 0
+31
+R18
+R14
+R15
+!i113 1
+R10
+R11

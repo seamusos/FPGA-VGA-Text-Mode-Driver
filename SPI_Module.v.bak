@@ -1,0 +1,45 @@
+module SPI_Module(clk, sck, mosi, cs, input_shiftreg, done);
+
+input clk;
+
+input sck;
+input mosi;
+input cs;
+
+output [15:0] input_shiftreg
+output done;
+
+
+reg [2:0] sck_record;
+always @(posedge clk)
+	sck_record <= {sck_record[1:0], sck};
+reg [2:0] cs_record;
+always @(posedge clk)
+	cs_record <= {cs_record[1:0], cs};
+
+reg current_state;
+reg [3:0] bitcounter;
+reg [15:0] input_shiftreg;
+
+always @(posedge clk) begin
+	if(cs_record[2:1] == 2'b01) begin
+		current_state <= 0;
+		bitcounter <= 0;
+	end else if (cs_record[2:1] == 2'b10) begin //Falling Edge (Start)
+		bitcounter <= 0; // Reset Bit Counter
+		current_state <= 1;
+	end else if (current_state == 1'b1 && sck_record[2:1] == 2'b01) begin
+		input_shiftreg = input_shiftreg << 1;
+		input_shifreg[0] = mosi;
+		bitcounter <= bitcounter + 1;
+		if(bitcounter == 16)
+			current_state <= 0;
+	end else begin
+		input_shiftreg <= input_shiftreg;
+	end
+end
+
+wire done = (bitcounter == 16);
+
+endmodule .
+
