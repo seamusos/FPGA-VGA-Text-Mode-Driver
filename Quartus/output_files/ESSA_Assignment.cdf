@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(EPCS16) MfrSpec(OpMask(0) Child_OpMask(1 1) FullPath("C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.pof"));
+	P ActionCode(Cfg)
+		Device PartName(EPCS16) Path("C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/") File("ESSA_Assignment.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
 
 ChainEnd;
 

@@ -20,7 +20,7 @@ assign stupid_buzzer = 1'b1;
 
 
 
-wire pixel_clock;
+wire pixel_clock;	
 wire inDisplayArea;
 wire [9:0] CounterX;
 wire [9:0] CounterY;
@@ -45,9 +45,9 @@ framebuffer buffer(.clk(clk), .counterX(CounterX), .counterY(CounterY), .spi_shi
 always @(posedge pixel_clock)
 begin
 	if (inDisplayArea) begin
-		vga_r <= 1'b0;
+		vga_r <= pixel_out;
 		vga_g <= pixel_out;
-		vga_b	<= 1'b0;
+		vga_b	<= pixel_out;
 	end
 	else begin// if it's not to display, go dark
 	  vga_r <= 1'b0;
@@ -55,64 +55,6 @@ begin
 	  vga_b <= 1'b0;
 	end
 end
-
-
-//always @(posedge pixel_clock)
-//begin
-//	if (inDisplayArea) begin
-////        vga_r <= 1'b1;
-////		  vga_g <= 1'b0;
-////		  vga_b <= 1'b0;
-//		if(CounterX > 0 && CounterX <= 80) begin
-//			vga_r <= 1'b0;
-//			vga_g <= 1'b0;
-//			vga_b <= 1'b0;
-//		end
-//		else if(CounterX > 80 && CounterX <= 160) begin
-//			vga_r <= 1'b1;
-//			vga_g <= 1'b0;
-//			vga_b <= 1'b0;
-//		end
-//		else if(CounterX > 160 && CounterX <= 240) begin
-//			vga_r <= 1'b0;
-//			vga_g <= 1'b1;
-//			vga_b <= 1'b0;
-//		end
-//		else if(CounterX > 240 && CounterX <= 320) begin
-//			vga_r <= 1'b1;
-//			vga_g <= 1'b1;
-//			vga_b <= 1'b0;
-//		end
-//		else if(CounterX > 320 && CounterX <= 400) begin
-//			vga_r <= 1'b0;
-//			vga_g <= 1'b0;
-//			vga_b <= 1'b1;
-//		end
-//		else if(CounterX > 400 && CounterX <= 480) begin
-//			vga_r <= 1'b1;
-//			vga_g <= 1'b0;
-//			vga_b <= 1'b1;
-//		end
-//		else if(CounterX > 480 && CounterX <= 560) begin
-//			vga_r <= 1'b0;
-//			vga_g <= 1'b1;
-//			vga_b <= 1'b1;
-//		end
-//		else begin
-//			vga_r <= 1'b1;
-//			vga_g <= 1'b1;
-//			vga_b <= 1'b1;
-//		end
-//	end
-//	else begin// if it's not to display, go dark
-//	  vga_r <= 1'b0;
-//	  vga_g <= 1'b0;
-//	  vga_b <= 1'b0;
-//	end
-//end
-
-
-
 
 
 endmodule

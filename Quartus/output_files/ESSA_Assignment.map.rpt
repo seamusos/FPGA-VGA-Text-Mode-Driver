@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESSA_Assignment
-Sun Oct 18 15:02:23 2020
+Sun Oct 18 18:42:22 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -55,15 +55,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 18 15:02:23 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 18 18:42:22 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; ESSA_Assignment                             ;
 ; Top-level Entity Name              ; vga                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 111                                         ;
+; Total logic elements               ; 113                                         ;
 ;     Total combinational functions  ; 82                                          ;
-;     Dedicated logic registers      ; 72                                          ;
-; Total registers                    ; 72                                          ;
+;     Dedicated logic registers      ; 74                                          ;
+; Total registers                    ; 74                                          ;
 ; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 33,184                                      ;
@@ -171,37 +171,38 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                               ;
-+----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                                       ; Library ;
-+----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
-; vga.v                            ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v                  ;         ;
-; frac_clock_divider.v             ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/frac_clock_divider.v   ;         ;
-; sync_generator.v                 ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/sync_generator.v       ;         ;
-; framebuffer.v                    ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/framebuffer.v          ;         ;
-; ascii_glyph.mif                  ; yes             ; User Memory Initialization File  ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/ascii_glyph.mif        ;         ;
-; glyph_rom.v                      ; yes             ; User Wizard-Generated File       ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/glyph_rom.v            ;         ;
-; SPI_Module.v                     ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/SPI_Module.v           ;         ;
-; twoport.v                        ; yes             ; User Wizard-Generated File       ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/twoport.v              ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                              ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                       ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                 ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                              ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                              ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                               ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                  ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                  ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                ;         ;
-; db/altsyncram_6ln1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/altsyncram_6ln1.tdf ;         ;
-; db/altsyncram_gja1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/altsyncram_gja1.tdf ;         ;
-; db/decode_c8a.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/decode_c8a.tdf      ;         ;
-; db/mux_smb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/mux_smb.tdf         ;         ;
-+----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                       ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                                                               ; Library ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; vga.v                            ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v                  ;         ;
+; frac_clock_divider.v             ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/frac_clock_divider.v   ;         ;
+; sync_generator.v                 ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/sync_generator.v       ;         ;
+; framebuffer.v                    ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/framebuffer.v          ;         ;
+; ascii_glyph.mif                  ; yes             ; User Memory Initialization File  ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/ascii_glyph.mif        ;         ;
+; glyph_rom.v                      ; yes             ; User Wizard-Generated File       ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/glyph_rom.v            ;         ;
+; SPI_Module.v                     ; yes             ; User Verilog HDL File            ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/SPI_Module.v           ;         ;
+; twoport.v                        ; yes             ; User Wizard-Generated File       ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/twoport.v              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                      ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                               ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                         ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                      ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                                      ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                       ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                          ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                          ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                        ;         ;
+; db/altsyncram_6ln1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/altsyncram_6ln1.tdf ;         ;
+; db/altsyncram_gja1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/altsyncram_gja1.tdf ;         ;
+; db/decode_c8a.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/decode_c8a.tdf      ;         ;
+; db/mux_smb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/mux_smb.tdf         ;         ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -209,7 +210,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 111       ;
+; Estimated Total logic elements              ; 113       ;
 ;                                             ;           ;
 ; Total combinational functions               ; 82        ;
 ; Logic element usage by number of LUT inputs ;           ;
@@ -221,8 +222,8 @@ https://fpgasoftware.intel.com/eula.
 ;     -- normal mode                          ; 42        ;
 ;     -- arithmetic mode                      ; 40        ;
 ;                                             ;           ;
-; Total registers                             ; 72        ;
-;     -- Dedicated logic registers            ; 72        ;
+; Total registers                             ; 74        ;
+;     -- Dedicated logic registers            ; 74        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 10        ;
@@ -232,8 +233,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 57        ;
-; Total fan-out                               ; 620       ;
-; Average fan-out                             ; 3.39      ;
+; Total fan-out                               ; 626       ;
+; Average fan-out                             ; 3.38      ;
 +---------------------------------------------+-----------+
 
 
@@ -242,7 +243,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name        ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |vga                                         ; 82 (1)              ; 72 (1)                    ; 33184       ; 0            ; 0       ; 0         ; 10   ; 0            ; |vga                                                                                                   ; vga                ; work         ;
+; |vga                                         ; 82 (1)              ; 74 (3)                    ; 33184       ; 0            ; 0       ; 0         ; 10   ; 0            ; |vga                                                                                                   ; vga                ; work         ;
 ;    |SPI_Module:SPI|                          ; 12 (12)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|SPI_Module:SPI                                                                                    ; SPI_Module         ; work         ;
 ;    |frac_clock_divider:clk_divider|          ; 1 (1)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|frac_clock_divider:clk_divider                                                                    ; frac_clock_divider ; work         ;
 ;    |framebuffer:buffer|                      ; 27 (27)             ; 28 (27)                   ; 33184       ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|framebuffer:buffer                                                                                ; framebuffer        ; work         ;
@@ -277,18 +278,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-----------------------------------------+-----------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                  ;
-+--------------------------------------------+----------------------------------------+
-; Register name                              ; Reason for Removal                     ;
-+--------------------------------------------+----------------------------------------+
-; vga_b~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; vga_r~reg0                                 ; Stuck at GND due to stuck port data_in ;
-; framebuffer:buffer|data[7]                 ; Lost fanout                            ;
-; SPI_Module:SPI|input_shiftreg[7]           ; Lost fanout                            ;
-; framebuffer:buffer|write_address[12..2399] ; Lost fanout                            ;
-; Total Number of Removed Registers = 2392   ;                                        ;
-+--------------------------------------------+----------------------------------------+
++-----------------------------------------------------------------+
+; Registers Removed During Synthesis                              ;
++--------------------------------------------+--------------------+
+; Register name                              ; Reason for Removal ;
++--------------------------------------------+--------------------+
+; framebuffer:buffer|data[7]                 ; Lost fanout        ;
+; SPI_Module:SPI|input_shiftreg[7]           ; Lost fanout        ;
+; framebuffer:buffer|write_address[12..2399] ; Lost fanout        ;
+; Total Number of Removed Registers = 2390   ;                    ;
++--------------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -296,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 72    ;
+; Total registers                              ; 74    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -511,15 +510,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 72                          ;
+; cycloneiii_ff         ; 74                          ;
 ;     ENA               ; 36                          ;
-;     plain             ; 36                          ;
-; cycloneiii_lcell_comb ; 86                          ;
+;     plain             ; 38                          ;
+; cycloneiii_lcell_comb ; 85                          ;
 ;     arith             ; 40                          ;
 ;         2 data inputs ; 33                          ;
 ;         3 data inputs ; 7                           ;
-;     normal            ; 46                          ;
-;         0 data inputs ; 3                           ;
+;     normal            ; 45                          ;
+;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 8                           ;
 ;         2 data inputs ; 11                          ;
 ;         3 data inputs ; 3                           ;
@@ -527,7 +526,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ram_block  ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.80                        ;
+; Average LUT depth     ; 1.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -536,7 +535,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -546,43 +545,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 18 15:02:06 2020
+    Info: Processing started: Sun Oct 18 18:42:02 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESSA_Assignment -c ESSA_Assignment
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga.v
-    Info (12023): Found entity 1: vga File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 2
+    Info (12023): Found entity 1: vga File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file frac_clock_divider.v
-    Info (12023): Found entity 1: frac_clock_divider File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/frac_clock_divider.v Line: 4
+    Info (12023): Found entity 1: frac_clock_divider File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/frac_clock_divider.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file sync_generator.v
-    Info (12023): Found entity 1: sync_generator File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/sync_generator.v Line: 2
+    Info (12023): Found entity 1: sync_generator File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/sync_generator.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/demo.v
-    Info (12023): Found entity 1: demo File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/demo.v Line: 2
+    Info (12023): Found entity 1: demo File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/demo.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file framebuffer.v
-    Info (12023): Found entity 1: framebuffer File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/framebuffer.v Line: 3
+    Info (12023): Found entity 1: framebuffer File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/framebuffer.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file glyph_rom.v
-    Info (12023): Found entity 1: glyph_rom File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/glyph_rom.v Line: 40
+    Info (12023): Found entity 1: glyph_rom File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/glyph_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file text_ram.v
-    Info (12023): Found entity 1: text_ram File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/text_ram.v Line: 40
+    Info (12023): Found entity 1: text_ram File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/text_ram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file spi_module.v
-    Info (12023): Found entity 1: SPI_Module File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/SPI_Module.v Line: 1
+    Info (12023): Found entity 1: SPI_Module File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/SPI_Module.v Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file spi_to_mem.v
 Info (12021): Found 1 design units, including 1 entities, in source file twoport.v
-    Info (12023): Found entity 1: twoport File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/twoport.v Line: 40
+    Info (12023): Found entity 1: twoport File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/twoport.v Line: 40
 Info (12127): Elaborating entity "vga" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at vga.v(49): truncated value with size 3 to match size of target (1) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 49
-Info (12128): Elaborating entity "frac_clock_divider" for hierarchy "frac_clock_divider:clk_divider" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 36
-Info (12128): Elaborating entity "sync_generator" for hierarchy "sync_generator:hvsync" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 38
-Warning (10230): Verilog HDL assignment warning at sync_generator.v(20): truncated value with size 32 to match size of target (10) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/sync_generator.v Line: 20
-Warning (10230): Verilog HDL assignment warning at sync_generator.v(29): truncated value with size 32 to match size of target (10) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/sync_generator.v Line: 29
-Info (12128): Elaborating entity "SPI_Module" for hierarchy "SPI_Module:SPI" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 40
-Warning (10230): Verilog HDL assignment warning at SPI_Module.v(38): truncated value with size 32 to match size of target (4) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/SPI_Module.v Line: 38
-Info (12128): Elaborating entity "framebuffer" for hierarchy "framebuffer:buffer" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 43
-Warning (10230): Verilog HDL assignment warning at framebuffer.v(36): truncated value with size 32 to match size of target (12) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/framebuffer.v Line: 36
-Info (12128): Elaborating entity "twoport" for hierarchy "framebuffer:buffer|twoport:textRam" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/framebuffer.v Line: 44
-Info (12128): Elaborating entity "altsyncram" for hierarchy "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/twoport.v Line: 89
-Info (12130): Elaborated megafunction instantiation "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/twoport.v Line: 89
-Info (12133): Instantiated megafunction "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/twoport.v Line: 89
+Warning (10230): Verilog HDL assignment warning at vga.v(48): truncated value with size 3 to match size of target (1) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 48
+Warning (10230): Verilog HDL assignment warning at vga.v(49): truncated value with size 3 to match size of target (1) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 49
+Warning (10230): Verilog HDL assignment warning at vga.v(50): truncated value with size 3 to match size of target (1) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 50
+Info (12128): Elaborating entity "frac_clock_divider" for hierarchy "frac_clock_divider:clk_divider" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 36
+Info (12128): Elaborating entity "sync_generator" for hierarchy "sync_generator:hvsync" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 38
+Warning (10230): Verilog HDL assignment warning at sync_generator.v(20): truncated value with size 32 to match size of target (10) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/sync_generator.v Line: 20
+Warning (10230): Verilog HDL assignment warning at sync_generator.v(29): truncated value with size 32 to match size of target (10) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/sync_generator.v Line: 29
+Info (12128): Elaborating entity "SPI_Module" for hierarchy "SPI_Module:SPI" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 40
+Warning (10230): Verilog HDL assignment warning at SPI_Module.v(38): truncated value with size 32 to match size of target (4) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/SPI_Module.v Line: 38
+Info (12128): Elaborating entity "framebuffer" for hierarchy "framebuffer:buffer" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 43
+Warning (10230): Verilog HDL assignment warning at framebuffer.v(34): truncated value with size 32 to match size of target (12) File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/framebuffer.v Line: 34
+Info (12128): Elaborating entity "twoport" for hierarchy "framebuffer:buffer|twoport:textRam" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/framebuffer.v Line: 42
+Info (12128): Elaborating entity "altsyncram" for hierarchy "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/twoport.v Line: 89
+Info (12130): Elaborated megafunction instantiation "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/twoport.v Line: 89
+Info (12133): Instantiated megafunction "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/twoport.v Line: 89
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
@@ -603,12 +604,12 @@ Info (12133): Instantiated megafunction "framebuffer:buffer|twoport:textRam|alts
     Info (12134): Parameter "width_b" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6ln1.tdf
-    Info (12023): Found entity 1: altsyncram_6ln1 File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/altsyncram_6ln1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_6ln1 File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/altsyncram_6ln1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_6ln1" for hierarchy "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component|altsyncram_6ln1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "glyph_rom" for hierarchy "framebuffer:buffer|glyph_rom:glyph" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/framebuffer.v Line: 82
-Info (12128): Elaborating entity "altsyncram" for hierarchy "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/glyph_rom.v Line: 82
-Info (12130): Elaborated megafunction instantiation "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/glyph_rom.v Line: 82
-Info (12133): Instantiated megafunction "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/glyph_rom.v Line: 82
+Info (12128): Elaborating entity "glyph_rom" for hierarchy "framebuffer:buffer|glyph_rom:glyph" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/framebuffer.v Line: 66
+Info (12128): Elaborating entity "altsyncram" for hierarchy "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/glyph_rom.v Line: 82
+Info (12130): Elaborated megafunction instantiation "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/glyph_rom.v Line: 82
+Info (12133): Instantiated megafunction "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/glyph_rom.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -624,42 +625,40 @@ Info (12133): Instantiated megafunction "framebuffer:buffer|glyph_rom:glyph|alts
     Info (12134): Parameter "width_a" = "1"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gja1.tdf
-    Info (12023): Found entity 1: altsyncram_gja1 File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/altsyncram_gja1.tdf Line: 32
+    Info (12023): Found entity 1: altsyncram_gja1 File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/altsyncram_gja1.tdf Line: 32
 Info (12128): Elaborating entity "altsyncram_gja1" for hierarchy "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_c8a.tdf
-    Info (12023): Found entity 1: decode_c8a File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/decode_c8a.tdf Line: 23
-Info (12128): Elaborating entity "decode_c8a" for hierarchy "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|decode_c8a:rden_decode" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/altsyncram_gja1.tdf Line: 40
+    Info (12023): Found entity 1: decode_c8a File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/decode_c8a.tdf Line: 23
+Info (12128): Elaborating entity "decode_c8a" for hierarchy "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|decode_c8a:rden_decode" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/altsyncram_gja1.tdf Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_smb.tdf
-    Info (12023): Found entity 1: mux_smb File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/mux_smb.tdf Line: 23
-Info (12128): Elaborating entity "mux_smb" for hierarchy "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|mux_smb:mux2" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/altsyncram_gja1.tdf Line: 41
+    Info (12023): Found entity 1: mux_smb File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/mux_smb.tdf Line: 23
+Info (12128): Elaborating entity "mux_smb" for hierarchy "framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|mux_smb:mux2" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/altsyncram_gja1.tdf Line: 41
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component|altsyncram_6ln1:auto_generated|q_b[7]" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/db/altsyncram_6ln1.tdf Line: 269
+        Warning (14320): Synthesized away node "framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component|altsyncram_6ln1:auto_generated|q_b[7]" File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/db/altsyncram_6ln1.tdf Line: 269
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "vga_r" is stuck at GND File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 13
-    Warning (13410): Pin "vga_b" is stuck at GND File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 15
-    Warning (13410): Pin "stupid_buzzer" is stuck at VCC File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/vga.v Line: 17
+    Warning (13410): Pin "stupid_buzzer" is stuck at VCC File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/vga.v Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2390 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 131 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 134 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 112 logic cells
+    Info (21061): Implemented 115 logic cells
     Info (21064): Implemented 9 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 5001 megabytes
-    Info: Processing ended: Sun Oct 18 15:02:23 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4999 megabytes
+    Info: Processing ended: Sun Oct 18 18:42:22 2020
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:33
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.map.smsg.
+The suppressed messages can be found in C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.map.smsg.
 
 

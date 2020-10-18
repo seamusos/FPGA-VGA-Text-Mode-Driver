@@ -1,5 +1,5 @@
 Assembler report for ESSA_Assignment
-Sun Oct 18 15:02:32 2020
+Sun Oct 18 18:42:34 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,8 +10,8 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.sof
-  6. Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.pof
+  5. Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.sof
+  6. Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.pof
   7. Assembler Messages
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 18 15:02:32 2020 ;
+; Assembler Status      ; Successful - Sun Oct 18 18:42:34 2020 ;
 ; Revision Name         ; ESSA_Assignment                       ;
 ; Top-level Entity Name ; vga                                   ;
 ; Family                ; Cyclone IV E                          ;
@@ -54,35 +54,35 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                                    ;
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                                    ;
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.sof ;
-; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.pof ;
-+----------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.sof ;
+; C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.pof ;
++------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.sof ;
-+----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                                               ;
-+----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x000B9A88                                                                                                                                            ;
-; Checksum       ; 0x000B9A88                                                                                                                                            ;
-+----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                                       ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x000BC39A                                                                                                                                                    ;
+; Checksum       ; 0x000BC39A                                                                                                                                                    ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/output_files/ESSA_Assignment.pof ;
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                                                                           ;
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode      ; 0x00000000                                                                                                                                        ;
-; Checksum           ; 0x1E5B164F                                                                                                                                        ;
-; Compression Ratio  ; 3                                                                                                                                                 ;
-+--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.pof ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                                                                   ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode      ; 0x00000000                                                                                                                                                ;
+; Checksum           ; 0x1E5BEC29                                                                                                                                                ;
+; Compression Ratio  ; 3                                                                                                                                                         ;
++--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -91,14 +91,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 18 15:02:31 2020
+    Info: Processing started: Sun Oct 18 18:42:32 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ESSA_Assignment -c ESSA_Assignment
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4692 megabytes
-    Info: Processing ended: Sun Oct 18 15:02:33 2020
+    Info: Peak virtual memory: 4690 megabytes
+    Info: Processing ended: Sun Oct 18 18:42:34 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

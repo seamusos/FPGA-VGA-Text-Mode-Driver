@@ -27,8 +27,6 @@ reg [2399 : 0] write_address;
 reg [7:0] data;
 reg write_en;
 
-reg [7:0] test_ascii;
-
 
 assign column = counterX[9:3];
 assign row = counterY[8:4];
@@ -37,34 +35,20 @@ assign ascii_address = column + (row * 80);
 
 
 //text memory
-//text_ram text_mem(.address(ascii_address), .clock(clk), .data(), .q(ascii_value));
+//text_ram text_mem(.address(ascii_address), .clock(clk), .q(ascii_value));
 
 
 
 twoport textRam(.clock(clk), .data(data), .rdaddress(ascii_address), .wraddress(write_address), .wren(write_en), .q(ascii_value));
 
 
-//always @(posedge clk) begin
-//	if(counterX[1] == 1'b1) begin
-//		write_en <= 1'b1;
-//		data <= test_ascii;
-//		write_address <= write_address + 1; //Increment to next char
-//		test_ascii <= test_ascii + 1;
-//	end
-//	else
-//		write_en <= 1'b0;
-//end
-
-
 always @(posedge clk) begin
-	if(spi_done[2:1] == 2'b01) begin
+	if(spi_done[2:1] == 2'b01) begin	// When a char has been re
 		write_en = 1'b1;
 		data = spi_shift_reg;
-//		data = test_ascii;
-//		test_ascii = test_ascii + 1;
 		write_address = write_address + 1; //Increment to next char
 	end else
-		write_en = 1'b0;
+		write_en <= 1'b0;
 end
 
 
