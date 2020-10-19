@@ -1,5 +1,5 @@
 Fitter report for ESSA_Assignment
-Mon Oct 19 15:59:19 2020
+Mon Oct 19 16:33:58 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -28,7 +28,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  20. Control Signals
  21. Global & Other Fast Signals
  22. Fitter RAM Summary
- 23. |vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|ALTSYNCRAM
+ 23. |vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_rna1:auto_generated|ALTSYNCRAM
  24. Routing Usage Summary
  25. LAB Logic Elements
  26. LAB-wide Signals
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 19 15:59:19 2020       ;
+; Fitter Status                      ; Successful - Mon Oct 19 16:33:58 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; ESSA_Assignment                             ;
 ; Top-level Entity Name              ; vga                                         ;
@@ -157,13 +157,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.7%      ;
-;     Processors 3-4         ;   0.7%      ;
+;     Processor 2            ;   0.9%      ;
+;     Processors 3-4         ;   0.9%      ;
 +----------------------------+-------------+
 
 
@@ -580,7 +580,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |framebuffer:buffer|                      ; 42 (41)     ; 28 (27)                   ; 0 (0)         ; 33184       ; 6    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 7 (6)             ; 21 (21)          ; |vga|framebuffer:buffer                                                                                ; framebuffer        ; work         ;
 ;       |glyph_rom:glyph|                      ; 1 (0)       ; 1 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 0 (0)            ; |vga|framebuffer:buffer|glyph_rom:glyph                                                                ; glyph_rom          ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 1 (0)       ; 1 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 0 (0)            ; |vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component                                ; altsyncram         ; work         ;
-;             |altsyncram_gja1:auto_generated| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 16384       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated ; altsyncram_gja1    ; work         ;
+;             |altsyncram_rna1:auto_generated| ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 16384       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_rna1:auto_generated ; altsyncram_rna1    ; work         ;
 ;       |twoport:textRam|                      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16800       ; 4    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |vga|framebuffer:buffer|twoport:textRam                                                                ; twoport            ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16800       ; 4    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |vga|framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component                                ; altsyncram         ; work         ;
 ;             |altsyncram_6ln1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16800       ; 4    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |vga|framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component|altsyncram_6ln1:auto_generated ; altsyncram_6ln1    ; work         ;
@@ -647,20 +647,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
-+--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; Name                                                                                                         ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF             ; Location                                                       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
-+--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; Single Clock ; 16384        ; 1            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 16384 ; 16384                       ; 1                           ; --                          ; --                          ; 16384               ; 2    ; ascii_glyph.mif ; M9K_X15_Y16_N0, M9K_X15_Y14_N0                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component|altsyncram_6ln1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 2400         ; 8            ; 2400         ; 8            ; yes                    ; no                      ; yes                    ; yes                     ; 19200 ; 2400                        ; 7                           ; 2400                        ; 7                           ; 16800               ; 4    ; None            ; M9K_X15_Y11_N0, M9K_X15_Y12_N0, M9K_X15_Y13_N0, M9K_X15_Y15_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-+--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; Name                                                                                                         ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF                ; Location                                                       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
++--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_rna1:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; Single Clock ; 16384        ; 1            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 16384 ; 16384                       ; 1                           ; --                          ; --                          ; 16384               ; 2    ; ../ascii_glyph.mif ; M9K_X15_Y16_N0, M9K_X15_Y14_N0                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component|altsyncram_6ln1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 2400         ; 8            ; 2400         ; 8            ; yes                    ; no                      ; yes                    ; yes                     ; 19200 ; 2400                        ; 7                           ; 2400                        ; 7                           ; 16800               ; 4    ; None               ; M9K_X15_Y11_N0, M9K_X15_Y12_N0, M9K_X15_Y13_N0, M9K_X15_Y15_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
++--------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+--------------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
 RAM content values are presented in the following format: (Binary) (Octal) (Decimal) (Hexadecimal) 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; |vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|ALTSYNCRAM                                                                                                                                                ;
+; |vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_rna1:auto_generated|ALTSYNCRAM                                                                                                                                                ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ;   Addr   ;              +0              ;              +1              ;              +2              ;              +3              ;              +4              ;              +5              ;              +6              ;              +7              ;
 +----------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
@@ -3030,7 +3030,7 @@ Info (176353): Automatically promoted node frac_clock_divider:clk_divider|clk_di
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -3043,7 +3043,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3051,10 +3051,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5504 megabytes
-    Info: Processing ended: Mon Oct 19 15:59:19 2020
+    Info: Peak virtual memory: 5503 megabytes
+    Info: Processing ended: Mon Oct 19 16:33:59 2020
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+

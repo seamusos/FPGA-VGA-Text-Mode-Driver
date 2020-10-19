@@ -536,24 +536,24 @@ wren_b => ~NO_FANOUT~
 rden_b => ~NO_FANOUT~
 data_a[0] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_gja1:auto_generated.address_a[0]
-address_a[1] => altsyncram_gja1:auto_generated.address_a[1]
-address_a[2] => altsyncram_gja1:auto_generated.address_a[2]
-address_a[3] => altsyncram_gja1:auto_generated.address_a[3]
-address_a[4] => altsyncram_gja1:auto_generated.address_a[4]
-address_a[5] => altsyncram_gja1:auto_generated.address_a[5]
-address_a[6] => altsyncram_gja1:auto_generated.address_a[6]
-address_a[7] => altsyncram_gja1:auto_generated.address_a[7]
-address_a[8] => altsyncram_gja1:auto_generated.address_a[8]
-address_a[9] => altsyncram_gja1:auto_generated.address_a[9]
-address_a[10] => altsyncram_gja1:auto_generated.address_a[10]
-address_a[11] => altsyncram_gja1:auto_generated.address_a[11]
-address_a[12] => altsyncram_gja1:auto_generated.address_a[12]
-address_a[13] => altsyncram_gja1:auto_generated.address_a[13]
+address_a[0] => altsyncram_rna1:auto_generated.address_a[0]
+address_a[1] => altsyncram_rna1:auto_generated.address_a[1]
+address_a[2] => altsyncram_rna1:auto_generated.address_a[2]
+address_a[3] => altsyncram_rna1:auto_generated.address_a[3]
+address_a[4] => altsyncram_rna1:auto_generated.address_a[4]
+address_a[5] => altsyncram_rna1:auto_generated.address_a[5]
+address_a[6] => altsyncram_rna1:auto_generated.address_a[6]
+address_a[7] => altsyncram_rna1:auto_generated.address_a[7]
+address_a[8] => altsyncram_rna1:auto_generated.address_a[8]
+address_a[9] => altsyncram_rna1:auto_generated.address_a[9]
+address_a[10] => altsyncram_rna1:auto_generated.address_a[10]
+address_a[11] => altsyncram_rna1:auto_generated.address_a[11]
+address_a[12] => altsyncram_rna1:auto_generated.address_a[12]
+address_a[13] => altsyncram_rna1:auto_generated.address_a[13]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_gja1:auto_generated.clock0
+clock0 => altsyncram_rna1:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -563,14 +563,14 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_gja1:auto_generated.q_a[0]
+q_a[0] <= altsyncram_rna1:auto_generated.q_a[0]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated
+|vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_rna1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[1] => ram_block1a0.PORTAADDR1
@@ -605,14 +605,14 @@ clock0 => address_reg_a[0].CLK
 q_a[0] <= mux_smb:mux2.result[0]
 
 
-|vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|decode_c8a:rden_decode
+|vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_rna1:auto_generated|decode_c8a:rden_decode
 data[0] => eq_node[1].IN0
 data[0] => eq_node[0].IN0
 eq[0] <= eq_node[0].DB_MAX_OUTPUT_PORT_TYPE
 eq[1] <= eq_node[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_gja1:auto_generated|mux_smb:mux2
+|vga|framebuffer:buffer|glyph_rom:glyph|altsyncram:altsyncram_component|altsyncram_rna1:auto_generated|mux_smb:mux2
 data[0] => result_node[0].IN1
 data[1] => result_node[0].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE

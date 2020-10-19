@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int serialInput = 5;
+  char serialInput = 0;
 //  SPIWrite(serialInput);
 //  delay(500);
   
@@ -37,7 +37,7 @@ void loop() {
 void SPIWrite(byte value)
 {
   digitalWrite(A5, LOW);
-  SPI.beginTransaction(SPISettings(2000000, MSBFIRST, SPI_MODE0));
+  SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
   SPI.transfer(value);
   digitalWrite(A5, HIGH);
   SPI.endTransaction();

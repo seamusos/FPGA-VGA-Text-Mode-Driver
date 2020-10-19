@@ -23,7 +23,7 @@ wire [13:0] glyph_address;	//Address of pixel for corresponding ASCII code
 reg [2:0] glyph_pos_x;	//8
 reg [3:0] glyph_pos_y;	//16
 
-reg [2399 : 0] write_address;	//Address to be written to
+reg [11 : 0] write_address;	//Address to be written to
 reg [7:0] data;	//data port from SPI shift reg
 reg write_en;		//Enables RAM Write
 
@@ -32,6 +32,8 @@ assign column = counterX[9:3];
 assign row = counterY[8:4];
 
 assign ascii_address = column + (row * 80);
+
+reg [7:0] test_ascii;
 
 
 //text memory
@@ -46,6 +48,8 @@ always @(posedge clk) begin
 	if(spi_done[2:1] == 2'b01) begin	// When a char has been re
 		write_en = 1'b1;
 		data = spi_shift_reg;
+//		data = test_ascii;
+//		test_ascii = test_ascii + 1;
 		write_address = write_address + 1; //Increment to next char
 	end else
 		write_en = 1'b0;
