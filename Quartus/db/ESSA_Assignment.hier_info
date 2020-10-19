@@ -1,11 +1,11 @@
 |vga
 clk => clk.IN3
-vga_h_sync <= sync_generator:hvsync.vga_h_sync
-vga_v_sync <= sync_generator:hvsync.vga_v_sync
-vga_r <= vga_r~reg0.DB_MAX_OUTPUT_PORT_TYPE
-vga_g <= vga_g~reg0.DB_MAX_OUTPUT_PORT_TYPE
-vga_b <= vga_b~reg0.DB_MAX_OUTPUT_PORT_TYPE
-stupid_buzzer <= <VCC>
+vga_h_sync << sync_generator:hvsync.vga_h_sync
+vga_v_sync << sync_generator:hvsync.vga_v_sync
+vga_r << vga_r~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_g << vga_g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_b << vga_b~reg0.DB_MAX_OUTPUT_PORT_TYPE
+stupid_buzzer << <VCC>
 sck => sck.IN1
 mosi => mosi.IN1
 cs => cs.IN1
