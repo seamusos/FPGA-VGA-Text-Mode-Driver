@@ -6,12 +6,12 @@ input clk; //50MHz
 output reg clk_div;
 
 //parameter divider = 16'h80E5;// Divide by 1.986097319
-
+parameter divider = 16'h8000;// Divide by 2
 
 reg [15:0] counter;
 //Counter Overflows into clk_div
 always @(posedge clk)
-    {clk_div, counter} <= counter + 16'h8000;  // divide by 4: (2^16)/2 = 0x8000
+    {clk_div, counter} <= counter + divider; 
 
 
 endmodule

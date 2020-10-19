@@ -1,5 +1,5 @@
 Fitter report for ESSA_Assignment
-Mon Oct 19 16:33:58 2020
+Mon Oct 19 18:46:00 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 19 16:33:58 2020       ;
+; Fitter Status                      ; Successful - Mon Oct 19 18:46:00 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; ESSA_Assignment                             ;
 ; Top-level Entity Name              ; vga                                         ;
@@ -251,7 +251,7 @@ The pin-out file can be found in C:/Users/Seamus/OneDrive/OneDrive University/Em
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )             ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )             ;
 ; Average interconnect usage (total/H/V)      ; 0.5% / 0.4% / 0.5%        ;
-; Peak interconnect usage (total/H/V)         ; 1.6% / 1.6% / 1.6%        ;
+; Peak interconnect usage (total/H/V)         ; 1.6% / 1.7% / 1.6%        ;
 ; Maximum fan-out                             ; 58                        ;
 ; Highest non-global fan-out                  ; 20                        ;
 ; Total fan-out                               ; 569                       ;
@@ -627,10 +627,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                                                     ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; SPI_Module:SPI|input_shiftreg[6]~5                                                                       ; LCCOMB_X12_Y13_N0  ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SPI_Module:SPI|input_shiftreg[6]~4                                                                       ; LCCOMB_X12_Y13_N0  ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; clk                                                                                                      ; PIN_23             ; 54      ; Clock                      ; yes    ; Global Clock         ; GCLK2            ; --                        ;
 ; frac_clock_divider:clk_divider|clk_div                                                                   ; FF_X33_Y12_N3      ; 26      ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; framebuffer:buffer|Equal0~0                                                                              ; LCCOMB_X12_Y13_N18 ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; framebuffer:buffer|Equal0~0                                                                              ; LCCOMB_X12_Y13_N30 ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; framebuffer:buffer|twoport:textRam|altsyncram:altsyncram_component|altsyncram_6ln1:auto_generated|q_b[6] ; M9K_X15_Y12_N0     ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; framebuffer:buffer|write_en                                                                              ; FF_X14_Y12_N29     ; 4       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
 ; sync_generator:hvsync|Equal0~2                                                                           ; LCCOMB_X12_Y12_N12 ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
@@ -642,7 +642,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                   ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk                                    ; PIN_23        ; 54      ; 30                                   ; Global Clock         ; GCLK2            ; --                        ;
+; clk                                    ; PIN_23        ; 54      ; 29                                   ; Global Clock         ; GCLK2            ; --                        ;
 ; frac_clock_divider:clk_divider|clk_div ; FF_X33_Y12_N3 ; 26      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
 +----------------------------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -2719,14 +2719,14 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 221 / 32,401 ( < 1 % ) ;
+; Block interconnects   ; 222 / 32,401 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 1,326 ( 0 % )      ;
-; C4 interconnects      ; 107 / 21,816 ( < 1 % ) ;
+; C4 interconnects      ; 108 / 21,816 ( < 1 % ) ;
 ; Direct links          ; 44 / 32,401 ( < 1 % )  ;
 ; Global clocks         ; 2 / 10 ( 20 % )        ;
-; Local interconnects   ; 65 / 10,320 ( < 1 % )  ;
+; Local interconnects   ; 66 / 10,320 ( < 1 % )  ;
 ; R24 interconnects     ; 8 / 1,289 ( < 1 % )    ;
-; R4 interconnects      ; 107 / 28,186 ( < 1 % ) ;
+; R4 interconnects      ; 109 / 28,186 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -3043,7 +3043,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.29 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3051,9 +3051,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/output_files/ESSA_Assignment.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5503 megabytes
-    Info: Processing ended: Mon Oct 19 16:33:59 2020
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 5502 megabytes
+    Info: Processing ended: Mon Oct 19 18:46:01 2020
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 
 

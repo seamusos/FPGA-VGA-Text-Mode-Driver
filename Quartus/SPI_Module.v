@@ -30,7 +30,7 @@ always @(posedge clk) begin
 		current_state <= 0;
 		bitcounter <= 0;
 	end else if (cs_record[2:1] == 2'b10) begin //Falling Edge (Start)
-		bitcounter <= 1; // Reset Bit Counter
+		bitcounter <= 0; // Reset Bit Counter
 		current_state <= 1;
 	end else if (current_state == 1'b1 && sck_record[2:1] == 2'b01) begin
 		input_shiftreg = input_shiftreg << 1;
