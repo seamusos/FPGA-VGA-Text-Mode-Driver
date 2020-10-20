@@ -1,5 +1,5 @@
 //Fractional Clock Divider
-//http://zipcpu.com/blog/2017/06/02/generating-timing.html
+// Designed from - http://zipcpu.com/blog/2017/06/02/generating-timing.html
 
 module frac_clock_divider(clk, clk_div);
 input clk; //50MHz

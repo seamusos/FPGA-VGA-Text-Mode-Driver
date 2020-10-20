@@ -34,7 +34,7 @@ assign row = counterY[8:4];
 assign ascii_address = column + (row * 80);
 
 
-//Testing
+//Used for static text Testing
 //text_ram text_mem(.address(ascii_address), .clock(clk), .q(ascii_value));
 
 

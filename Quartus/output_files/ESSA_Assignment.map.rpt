@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ESSA_Assignment
-Mon Oct 19 18:45:52 2020
+Tue Oct 20 18:03:08 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 19 18:45:52 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 20 18:03:08 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; ESSA_Assignment                             ;
 ; Top-level Entity Name              ; vga                                         ;
@@ -554,7 +554,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 19 18:45:38 2020
+    Info: Processing started: Tue Oct 20 18:02:54 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ESSA_Assignment -c ESSA_Assignment
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -574,7 +574,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file text_ra
     Info (12023): Found entity 1: text_ram File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/text_ram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file spi_module.v
     Info (12023): Found entity 1: SPI_Module File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/SPI_Module.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file spi_to_mem.v
+Warning (12019): Can't analyze file -- file SPI_to_mem.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file twoport.v
     Info (12023): Found entity 1: twoport File: C:/Users/Seamus/OneDrive/OneDrive University/Embedded Systems Studio A/Assignment/FPGA VGA Text Mode Driver/Quartus/twoport.v Line: 40
 Info (12127): Elaborating entity "vga" for the top level hierarchy
@@ -659,11 +659,11 @@ Info (21057): Implemented 134 device resources after synthesis - the final resou
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 115 logic cells
     Info (21064): Implemented 9 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Mon Oct 19 18:45:52 2020
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4795 megabytes
+    Info: Processing ended: Tue Oct 20 18:03:08 2020
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+
