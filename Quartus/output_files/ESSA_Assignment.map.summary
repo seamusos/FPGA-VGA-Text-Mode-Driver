@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Oct 20 18:03:08 2020
+Analysis & Synthesis Status : Successful - Wed Oct 21 12:34:14 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : ESSA_Assignment
 Top-level Entity Name : vga
 Family : Cyclone IV E
-Total logic elements : 113
-    Total combinational functions : 82
-    Dedicated logic registers : 74
-Total registers : 74
+Total logic elements : 46
+    Total combinational functions : 42
+    Dedicated logic registers : 28
+Total registers : 28
 Total pins : 10
 Total virtual pins : 0
-Total memory bits : 33,184
+Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

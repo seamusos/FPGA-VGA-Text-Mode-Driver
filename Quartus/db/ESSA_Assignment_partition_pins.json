@@ -26,18 +26,6 @@
 				{
 					"name" : "clk",
 					"strict" : false
-				},
-				{
-					"name" : "mosi",
-					"strict" : false
-				},
-				{
-					"name" : "cs",
-					"strict" : false
-				},
-				{
-					"name" : "sck",
-					"strict" : false
 				}
 			]
 		}

@@ -41,21 +41,21 @@ assign ascii_address = column + (row * 80);
 // Two port RAM Block to store ASCII reference from SPI
 twoport textRam(.clock(clk), .data(data), .rdaddress(ascii_address), .wraddress(write_address), .wren(write_en), .q(ascii_value));
 
-
+//Write to Text RAM
 always @(posedge clk) begin
-	if(spi_done[2:1] == 1'b01) begin	// When a char has been re
+	if(spi_done[2:1] == 1'b01) begin	// SPI Rising edge When a char has been read
 		write_en = 1'b1;
 		data = spi_shift_reg;
-		write_address = write_address + 1; //Increment to next char
+		write_address = write_address + 1; //Increment to next space in grid
 	end else
 		write_en = 1'b0;
 end
 
 
-
+// Assign position in glyph matrix from pixel sync
 always @(posedge clk) begin
-	glyph_pos_x <= counterX[2:0];	// Every
-	glyph_pos_y <= counterY[3:0];
+	glyph_pos_x <= counterX[2:0];	
+	glyph_pos_y <= counterY[3:0];	
 end
 
 //Calculates Address Position in ROM from ASCII Code, then returns bit based on pixel position
