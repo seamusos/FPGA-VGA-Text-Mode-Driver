@@ -26,7 +26,7 @@ reg current_state;
 reg [3:0] bitcounter;
 
 always @(posedge clk) begin
-	if(cs_record[2:1] == 2'b01) begin //Rising Edge
+	if(cs_record[2:1] == 2'b01) begin //Rising Edge (end)
 		current_state <= 0;
 		bitcounter <= 0;
 	end else if (cs_record[2:1] == 2'b10) begin //Falling Edge (Start)

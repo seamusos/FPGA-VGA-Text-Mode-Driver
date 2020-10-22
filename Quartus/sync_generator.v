@@ -13,7 +13,6 @@ module sync_generator(clk, vga_h_sync, vga_v_sync, inDisplayArea, CounterX, Coun
 	wire CounterXmaxed = (CounterX == 800); // 16 + 48 + 96 + 640
    wire CounterYmaxed = (CounterY == 525); // 10 + 2 + 33 + 480
 	
-	
 	//For each pixel clock increment horizontal counter
    always @(posedge clk)
    if (CounterXmaxed)

@@ -50,9 +50,9 @@ framebuffer buffer(.clk(clk), .counterX(CounterX), .counterY(CounterY), .spi_shi
 always @(posedge pixel_clock)
 begin
 	if (inDisplayArea) begin	// If within display Region
-		vga_r <= 1'b1;
-		vga_g <= 1'b1;
-		vga_b	<= 1'b1;
+		vga_r <= pixel_out;
+		vga_g <= pixel_out;
+		vga_b	<= pixel_out;
 	end
 	else begin// if it's not to display, go dark
 	  vga_r <= 1'b0;
